@@ -1,0 +1,18 @@
+# importing randint function
+# from random module
+from random import randint
+
+# Function which generates a new
+# random number everytime it executes
+def gen_temp():
+	return randint(1,300)
+def gen_humid():
+    return randint(1,300)
+random_temperature=gen_temp()
+print("TEMPERATURE=",random_temperature)
+random_humidity=gen_humid()
+print("HUMIDITY=",random_humidity)
+if random_temperature not in range(30,38,1):
+    print("Warning : High Temperature!!")
+if random_humidity not in range(78,81,1):
+    print("Warning:High Humidity!!")
